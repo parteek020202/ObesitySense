@@ -18,7 +18,7 @@ st.set_page_config(
 @st.cache_resource
 def load_models():
     model = joblib.load('models/RandomForest.pkl')
-    scaler = joblib.load('scaler.pkl')
+    scaler = joblib.load('scalers/scaler.pkl')
     label_encoder = joblib.load('encoders/label_encoder_target.pkl')
     onehot_encoder = joblib.load('encoders/onehot_encoder_MTRANS.pkl')
     ordinal_encoder = joblib.load('encoders/ordinal_encoders.pkl')
